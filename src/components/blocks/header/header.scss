@@ -1,0 +1,31 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.header-wrapper {
+  background-color: $white;
+  width: 100%;
+
+  .header-container {
+    @include contentWidth;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .header_logoBox {
+      width: 140px;
+    }
+
+    .header_menuLinksBox {
+      display: flex;
+      flex-direction: row;
+      column-gap: 50px;
+
+      .menuLinksBox_eachLink {
+        color: $black;
+        font-weight: 300;
+      }
+    }
+  }
+}
