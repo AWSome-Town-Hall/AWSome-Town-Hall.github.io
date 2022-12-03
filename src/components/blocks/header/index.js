@@ -4,32 +4,44 @@ import { Link } from "gatsby";
 // Mocks
 import { HeaderLinks } from "../../../mocks/links";
 
-// Images
-import Logo from "../../../images/logo.svg";
-
 // Styles
 import "./header.scss";
 
 const Header = () => {
   return (
-    <div className="header-wrapper">
-      <div className="header-container">
-        <div className="header_logoBox">
-          <img
-            src={Logo}
-            style={{ width: "100%", height: "100%" }}
-            alt="AWSome Town Hall - Logo"
-          />
-        </div>
-        <div className="header_menuLinksBox">
-          {HeaderLinks?.map((link) => (
-            <Link className="menuLinksBox_eachLink" to={link.url}>
-              {link.name}
-            </Link>
-          ))}
+    <>
+      <div className="headerWrapper">
+        <div className="headerContainer">
+          <Link to="/">
+            <h2 className="logoBox_text" aria-readonly>
+              <span style={{ color: "#ec912d" }}>AWS</span>ome TownHall
+            </h2>
+          </Link>
+
+          <div className="header_menuLinksBox">
+            {HeaderLinks?.map((link) => (
+              <Link className="menuLinksBox_eachLink" to={link.url}>
+                {link.name}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+
+      {/* Accounement ribbon */}
+      <div className="anncRibbon">
+        <div className="anncRibbon_contentBox">
+          <h3 className="contentBox_text">
+            Learn AWS with the experts.{" "}
+            <Link to="/">
+              <span className="clickableText">
+                Become a member of our community!
+              </span>
+            </Link>
+          </h3>
+        </div>
+      </div>
+    </>
   );
 };
 
