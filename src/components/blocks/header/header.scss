@@ -1,0 +1,68 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.headerWrapper {
+  background-color: $white;
+  border-bottom: 1px solid rgb(0 0 0 / 30%);
+  box-shadow: 0 1px 2px #3c404326;
+  width: 100%;
+  height: 50px;
+
+  .headerContainer {
+    @include contentWidth;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .logoBox_text {
+      @include primaryFont;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .header_menuLinksBox {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      column-gap: 50px;
+
+      .menuLinksBox_eachLink {
+        color: $black;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.8;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.anncRibbon {
+  background-color: rgb(236 145 45 / 20%);
+  padding: 20px 10px;
+
+  .anncRibbon_contentBox {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+
+    .contentBox_text {
+      font-size: 14px;
+      font-weight: 500;
+      color: $orange;
+
+      .clickableText {
+        font-weight: 600;
+        text-decoration: underline;
+      }
+    }
+  }
+}
