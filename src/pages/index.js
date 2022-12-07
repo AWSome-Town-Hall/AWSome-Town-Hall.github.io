@@ -1,7 +1,7 @@
 import * as React from "react";
 
 // Components
-import { Header } from "../components";
+import { Header, Timeline } from "../components";
 
 // Styles
 import "../styles/index.scss";
@@ -29,143 +29,18 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <section className="resourcesSection_wrapper">
-        <div className="resourcesSection_container">
-          <h2 className="resourcesSection_heading">Latest resources</h2>
-          <div className="resources_cardsWrapper">
-            <div className="eachResource_cardBox">
-              <div className="cardBox_contentBox">
-                <h3 className="resource_title">AWS Whitepapers & Guides</h3>
-                <h4 className="resource_subTitle">AWS</h4>
-                <p className="resource_description">
-                  Lorem ipsum may be used as a placeholder before final copy is
-                  available.
-                </p>
-                <div className="cardBox_contentBox_tagsWrapper">
-                  <span className="cardBox_tagsWrapper_eachTag">
-                    aws.amazon.com
-                  </span>
-                  <span className="cardBox_tagsWrapper_eachTag">aws</span>
-                  <span className="cardBox_tagsWrapper_eachTag">
-                    whitespaper
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="eachResource_cardBox">
-              <div className="cardBox_contentBox">
-                <h3 className="resource_title">AWS Whitepapers & Guides</h3>
-                <h4 className="resource_subTitle">AWS</h4>
-                <p className="resource_description">
-                  Lorem ipsum may be used as a placeholder before final copy is
-                  available.
-                </p>
-                <div className="cardBox_contentBox_tagsWrapper">
-                  <span className="cardBox_tagsWrapper_eachTag">
-                    aws.amazon.com
-                  </span>
-                  <span className="cardBox_tagsWrapper_eachTag">aws</span>
-                  <span className="cardBox_tagsWrapper_eachTag">
-                    whitespaper
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="eachResource_cardBox">
-              <div className="cardBox_contentBox">
-                <h3 className="resource_title">AWS Whitepapers & Guides</h3>
-                <h4 className="resource_subTitle">AWS</h4>
-                <p className="resource_description">
-                  Lorem ipsum may be used as a placeholder before final copy is
-                  available.
-                </p>
-                <div className="cardBox_contentBox_tagsWrapper">
-                  <span className="cardBox_tagsWrapper_eachTag">
-                    aws.amazon.com
-                  </span>
-                  <span className="cardBox_tagsWrapper_eachTag">aws</span>
-                  <span className="cardBox_tagsWrapper_eachTag">
-                    whitespaper
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="eachResource_cardBox">
-              <div className="cardBox_contentBox">
-                <h3 className="resource_title">AWS Whitepapers & Guides</h3>
-                <h4 className="resource_subTitle">AWS</h4>
-                <p className="resource_description">
-                  Lorem ipsum may be used as a placeholder before final copy is
-                  available.
-                </p>
-                <div className="cardBox_contentBox_tagsWrapper">
-                  <span className="cardBox_tagsWrapper_eachTag">
-                    aws.amazon.com
-                  </span>
-                  <span className="cardBox_tagsWrapper_eachTag">aws</span>
-                  <span className="cardBox_tagsWrapper_eachTag">
-                    whitespaper
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="eachResource_cardBox">
-              <div className="cardBox_contentBox">
-                <h3 className="resource_title">AWS Whitepapers & Guides</h3>
-                <h4 className="resource_subTitle">AWS</h4>
-                <p className="resource_description">
-                  Lorem ipsum may be used as a placeholder before final copy is
-                  available.
-                </p>
-                <div className="cardBox_contentBox_tagsWrapper">
-                  <span className="cardBox_tagsWrapper_eachTag">
-                    aws.amazon.com
-                  </span>
-                  <span className="cardBox_tagsWrapper_eachTag">aws</span>
-                  <span className="cardBox_tagsWrapper_eachTag">
-                    whitespaper
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="eachResource_cardBox">
-              <div className="cardBox_contentBox">
-                <h3 className="resource_title">AWS Whitepapers & Guides</h3>
-                <h4 className="resource_subTitle">AWS</h4>
-                <p className="resource_description">
-                  Lorem ipsum may be used as a placeholder before final copy is
-                  available.
-                </p>
-                <div className="cardBox_contentBox_tagsWrapper">
-                  <span className="cardBox_tagsWrapper_eachTag">
-                    aws.amazon.com
-                  </span>
-                  <span className="cardBox_tagsWrapper_eachTag">aws</span>
-                  <span className="cardBox_tagsWrapper_eachTag">
-                    whitespaper
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="eachResource_cardBox">
-              <div className="cardBox_contentBox">
-                <h3 className="resource_title">AWS Whitepapers & Guides</h3>
-                <h4 className="resource_subTitle">AWS</h4>
-                <p className="resource_description">
-                  Lorem ipsum may be used as a placeholder before final copy is
-                  available.
-                </p>
-                <div className="cardBox_contentBox_tagsWrapper">
-                  <span className="cardBox_tagsWrapper_eachTag">
-                    aws.amazon.com
-                  </span>
-                  <span className="cardBox_tagsWrapper_eachTag">aws</span>
-                  <span className="cardBox_tagsWrapper_eachTag">
-                    whitespaper
-                  </span>
-                </div>
-              </div>
-            </div>
+      {/* Timeline */}
+      <section className="timelineSection_wrapper">
+        <div className="timelineSection_container">
+          <h2 className="timelineSection_heading">
+            Roadmap to gain expertise in AWS
+          </h2>
+          <p className="timelineSection_subHeading">
+            New modules are released monthly. Each one should take a day or two
+            to complete.
+          </p>
+          <div className="timelineSection_timlineBoxes_wrapper">
+            <Timeline />
           </div>
         </div>
       </section>

@@ -8,7 +8,7 @@ export const HeaderLinks = [
     url: "/",
   },
   {
-    name: "Why the exists",
-    url: "/",
+    name: "Resources",
+    url: "/resources",
   },
 ];

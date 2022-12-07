@@ -1,0 +1,18 @@
+.timeline-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 30px;
+  padding-left: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: rgba(236, 145, 45, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
