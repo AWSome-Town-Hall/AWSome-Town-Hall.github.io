@@ -1,0 +1,34 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.courses-wrapper {
+  @include contentWidth;
+  padding: 50px 0;
+
+  .coursesSection_heading {
+    font-size: 22px;
+    font-family: "Plus Jakarta Sans";
+  }
+
+  .coursesSection_subHeading {
+    max-width: 400px;
+    color: $black;
+    line-height: 22px;
+    opacity: 0.8;
+    margin-top: 14px;
+  }
+
+  .all-courses {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 16px;
+
+    .course-item {
+      flex-basis: 19%;
+    }
+  }
+}
