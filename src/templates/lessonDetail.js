@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, navigate } from "gatsby";
 
 // Components
 import Header from "../components/blocks/header";
@@ -17,7 +17,7 @@ const LessonDetail = ({ data }) => {
     <main>
       <Header />
       <section className="lesson-detail">
-        <div className="lesson-back-icon">
+        <div className="lesson-back-icon" onClick={() => navigate(-1)}>
           <img src={BackIcon} alt="Go back!" />
         </div>
         <div className="lesson-card">
