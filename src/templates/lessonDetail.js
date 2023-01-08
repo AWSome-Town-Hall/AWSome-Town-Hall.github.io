@@ -1,14 +1,33 @@
-import { graphql, Link } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
-
 import React from "react";
+import { graphql } from "gatsby";
+
+// Components
+import Header from "../components/blocks/header";
+
+// Icons
+import BackIcon from "../assets/icons/back.svg";
+
+// Styles
+import "./styles.scss";
 
 const LessonDetail = ({ data }) => {
-  console.log(data);
+  const { lesson } = data.mdx.frontmatter;
+
   return (
-    <>
-      <div dangerouslySetInnerHTML={{ __html: data.mdx.body }} />
-    </>
+    <main>
+      <Header />
+      <section className="lesson-detail">
+        <div className="lesson-back-icon">
+          <img src={BackIcon} alt="Go back!" />
+        </div>
+        <div className="lesson-card">
+          <div className="l-card-header">{lesson}</div>
+          <div className="l-card-body">
+            <div dangerouslySetInnerHTML={{ __html: data.mdx.body }} />
+          </div>
+        </div>
+      </section>
+    </main>
   );
 };
 
